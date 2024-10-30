@@ -1,0 +1,36 @@
+﻿@using MVCRouteAtribute.Models
+@{
+    var users = ViewData["Users"] as List<User>;
+    var mesaj = TempData["Mesaj"] as string;
+}
+
+<h2>Kullanıcı Listesi</h2>
+
+@if (!string.IsNullOrEmpty(mesaj))
+{
+    <p style="color: green;">@mesaj</p>
+}
+
+<table border="1" cellpadding="5" cellspacing="0">
+    <tr>
+        <th>ID</th>
+        <th>İsim</th>
+        <th>Email</th>
+        <th>İşlemler</th>
+    </tr>
+
+    @foreach (var user in users)
+    {
+        <tr>
+            <td>@user.Id</td>
+            <td>@user.Name</td>
+            <td>@user.Email</td>
+            <td>
+                <a href="/kullanici/detay/@user.Id">Detay</a> |
+                <a href="/kullanici/sil/@user.Id">Sil</a>
+            </td>
+        </tr>
+    }
+</table>
+
+<a href="/kullanici/ekle">Yeni Kullanıcı Ekle</a>

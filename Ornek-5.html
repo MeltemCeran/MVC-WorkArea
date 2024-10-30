@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- //Dizi Elemanlarını Listenin Icine Atma -->
+
+    <ul id="liste"></ul>
+
+    <script>
+    let meyveler  =["Elma","Muz","Portakal","Çilek"];
+    let liste = document.getElementById("liste");
+    meyveler.forEach(meyve => {
+        let li = document.createElement("li")
+        li.textContent=meyve;
+        liste.appendChild(li)
+    })
+    </script>
+
+</body>
+</html>

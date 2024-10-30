@@ -1,0 +1,15 @@
+﻿@addTagHelper *, CustomTagHelper
+
+@{
+    ViewData["Title"] = "Giriş Yap";
+}
+
+<h1>Giriş Yap</h1>
+
+<!-- Login Form Tag Helper -->
+<login-form></login-form>
+
+@if (ViewBag.Message != null)
+{
+    <p style="color:red;">@ViewBag.Message</p>
+}

@@ -1,0 +1,7 @@
+﻿@{
+    ViewBag.Title = "ViewData Örneği";
+}
+
+<h2>@ViewBag.Title</h2>
+<p>@ViewData["Mesaj"]</p>
+<p>@((int)ViewData["Yil"] + 1)</p> <!-- Tip dönüşümü yapılıyor. -->

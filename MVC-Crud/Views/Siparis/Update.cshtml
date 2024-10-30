@@ -1,0 +1,19 @@
+﻿@model Siparis
+
+<form asp-action="Update" method="post">
+    <input type="hidden" asp-for="SiparisId" />
+    <div class="form-group">
+        <label>Müşteri Adı:</label>
+        <input type="text" asp-for="Musteri.Ad" class="form-control" required />
+    </div>
+    <div class="form-group">
+        <label>Urun Adı:</label>
+        <input type="text" asp-for="Urun.Adi" class="form-control" required />
+    </div>
+    <div class="form-group">
+        <label>Sipariş Tarihi:</label>
+        <input type="text" asp-for="SiparisTarihi" class="form-control" required />
+    </div>
+    <button type="submit" class="btn btn-primary">Kaydet</button>
+    <a asp-action="Index" class="btn btn-secondary">Geri Dön</a>
+</form>

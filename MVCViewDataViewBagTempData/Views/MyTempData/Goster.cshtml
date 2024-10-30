@@ -1,0 +1,10 @@
+﻿@{
+    ViewBag.Title = "TempData Gösterim";
+}
+
+<h2>@ViewBag.Title</h2>
+
+<!-- TempData'dan veri gösteriyoruz. -->
+<p>@TempData["Bildirim"]</p> <!-- İlk seferde mesaj görünür. -->
+<!-- İkinci kez denediğimizde TempData'nın boş döneceğini biliyoruz. -->
+<p>@TempData["Bildirim"]</p> <!-- İkinci kez boş döner. -->

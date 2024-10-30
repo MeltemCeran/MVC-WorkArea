@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <button id="ekleBtn3">Ürün Ekle (eventHandler)</button>
+    <div id="urunContainer3"></div>
+
+    <script>
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  const ekleBtn3 = document.getElementById('ekleBtn3')
+  const urunContainer3 = document.getElementById('urunContainer3')
+
+  ekleBtn3.onclick = () => {
+      const label = document.createElement('label')
+      label.textContent = 'Ürün Adı:'
+
+      const input = document.createElement('input')
+      input.type = 'text'
+      input.placeholder = 'Ürün adı giriniz'
+
+      urunContainer3.appendChild(label)
+      urunContainer3.appendChild(input)
+      urunContainer3.appendChild(document.createElement('br'))
+  };
+});
+
+    </script>
+</body>
+</html>

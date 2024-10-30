@@ -1,0 +1,25 @@
+﻿@model List<Urun>
+
+<h1>Ürün Tablosu</h1>
+<table border="1">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Ürün Adı</th>
+            <th>Fiyat (TL)</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var urun in Model)
+        {
+            <tr>
+                <td>@urun.Id</td>
+                <td>@urun.Ad</td>
+                <td>@urun.Fiyat</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<a href="/Urun/Liste">Ürünleri Liste Olarak Göster</a>
+<a href="/Urun/Ekle">Yeni Ürün Ekle</a>

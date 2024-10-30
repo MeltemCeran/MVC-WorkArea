@@ -1,0 +1,12 @@
+﻿@addTagHelper *, CustomTagHelper
+
+@{
+    ViewData["Title"] = "Stok Kontrol Örneği";
+}
+
+<h1>Ürün Stok Durumu</h1>
+
+<!-- Stok durumunu kontrol eden Tag Helper -->
+<stok-durumu stok="25"></stok-durumu>  <!-- Yeterli Stok -->
+<stok-durumu stok="15"></stok-durumu>  <!-- Kritik Stok -->
+<stok-durumu stok="5"></stok-durumu>   <!-- Yetersiz Stok -->

@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="kullaniciAdi" placeholder="Kullanici Adi Giriniz ">
+    <button id="btnKaydet">Kaydet</button>
+    <button id="btnSil">Oturumu Kapat</button>
+
+    <script>
+    const btnKaydet = document.getElementById('btnKaydet')
+    const btnSil = document.getElementById('btnSil')
+
+    btnKaydet.addEventListener('click',()=>{
+        const kullaniciAdi = document.getElementById('kullaniciAdi');
+        if(kullaniciAdi)
+    sessionStorage.setItem('kullaniciAdi',kullaniciAdi);
+
+    //todo timeout
+    setTimeout(()=>{
+        sessionStorage.removeItem('kullaniciAdi')
+    },30000)
+    })
+
+    btnSil.addEventListener('click',()=>{
+        sessionStorage.removeItem('kullaniciAdi');
+    });
+    </script>
+</body>
+
+</html>

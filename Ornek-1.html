@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #renkKutusu {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <!-- //Div içerisinde kutu oluşuturun mouse üstüne geldiğinde istediğiz bir renk ile kutunun rengi değişsin . -->
+
+    <div id="renkKutusu"></div>
+    <script>
+    //const kutu = document.getElementById("renkKutusu");
+    const kutu = document.querySelector("#renkKutusu")
+
+    kutu.onmouseover = () => kutu.style.backgroundColor="green"
+    kutu.addEventListener('mouseout', () => {
+    kutu.style.backgroundColor = "red";
+});
+    </script>
+</body>
+</html>

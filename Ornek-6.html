@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .galeri {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+            .galeri img {
+                width: 200px;
+                margin: 10px;
+                border: 2px solid #ccc;
+            }
+    </style>
+</head>
+<body>
+    // UrlDeki ResimlerIle Galeri Olusturma
+
+    <h1>Resim Galerim</h1>
+    <div class="galeri" id="resimGalerisi"></div>
+
+
+    <script>
+
+
+
+let resimler = [
+  "https://picsum.photos/200/150?random=1",
+  "https://picsum.photos/200/150?random=2",
+  "https://picsum.photos/200/150?random=3",
+  "https://picsum.photos/200/150?random=4",
+  "https://picsum.photos/200/150?random=5",
+  "https://picsum.photos/200/150?random=6",
+  "https://picsum.photos/200/150?random=7",
+  "https://picsum.photos/200/150?random=8",
+  "https://picsum.photos/200/150?random=9",
+  "https://picsum.photos/200/150?random=10",
+  "https://picsum.photos/200/150?random=11",
+  "https://picsum.photos/200/150?random=12",
+  "https://picsum.photos/200/150?random=13",
+  "https://picsum.photos/200/150?random=14",
+  "https://picsum.photos/200/150?random=15",
+  "https://picsum.photos/200/150?random=16",
+  "https://picsum.photos/200/150?random=17",
+  "https://picsum.photos/200/150?random=18",
+  "https://picsum.photos/200/150?random=19",
+  "https://picsum.photos/200/150?random=20"
+];
+
+
+  // Idden galeriyi al
+  let resimGalerisi = document.getElementById("resimGalerisi");
+
+  // Dizi elemanlarını galeride göster
+  for (let i = 0; i < resimler.length; i++) {
+    let img = document.createElement("img"); // yeni bir img tagı oluştur
+    img.src = resimler[i]; // resmin içine gönder
+    resimGalerisi.appendChild(img); // childlarına ekle
+  }
+
+    </script>
+</body>
+</html>

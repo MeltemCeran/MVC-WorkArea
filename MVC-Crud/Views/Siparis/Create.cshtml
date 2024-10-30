@@ -1,0 +1,30 @@
+﻿@model Siparis
+
+@{
+    ViewBag.Title = "Yeni Sipariş Ekle";
+}
+
+<h2>@ViewBag.Title</h2>
+
+<form asp-action="Create" method="post">
+    <div class="form-group">
+        <label>Müşteri Adı:</label>
+        <select name="MusteriId" id="MusteriId" class="form-select">
+            @foreach (Musteri musteri in ViewBag.MusteriList)
+            {
+                <option value="@musteri.MusteriId">@musteri.Ad</option>
+            }
+        </select>
+        <input type="text" asp-for="Musteri.Ad" class="form-control" required />
+    </div>
+    <div class="form-group">
+        <label>Ürün Adı:</label>
+        <input type="text" asp-for="Urun.Adi" class="form-control" required />
+    </div>
+    <div class="form-group">
+        <label>Tarih:</label>
+        <input type="text" asp-for="SiparisTarihi" class="form-control" required />
+    </div>
+    <button type="submit" class="btn btn-primary">Ekle</button>
+    <a asp-action="Index" class="btn btn-secondary">Geri Dön</a>
+</form>

@@ -1,0 +1,23 @@
+﻿@model IEnumerable<Musteri>
+
+<div class="container mt-5">
+    <h2 class="mb-4">Müşteriler</h2>
+    <div class="row">
+        @foreach (var item in Model)
+        {
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">@item.Ad @item.Soyad</h5>
+                    <h6 class="card-subtitle mb-2 text-body-secondary">@item.MusteriId</h6>
+                    <p class="card-text">@item.Email</p>
+                    <a asp-action="Update" asp-route-id="@item.MusteriId" class="btn btn-warning">Düzenle</a>
+                    <a asp-action="Remove" asp-route-id="@item.MusteriId" class="btn btn-danger">Sil</a>
+                </div>
+            </div>
+        }
+    </div>
+    <div class="mt-5">
+        <a asp-action="Create" class="btn btn-primary">Yeni Müşteri Ekle</a>
+    </div>
+</div>
+

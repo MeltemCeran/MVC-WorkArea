@@ -1,0 +1,33 @@
+﻿@{
+    var ogrenciler = ViewData["Ogrenciler"] as List<Ogrenci>;
+    var mesaj = TempData["Mesaj"] as string;
+}
+
+<h2>Öğrenci Listesi</h2>
+
+@if (!string.IsNullOrEmpty(mesaj))
+{
+    <p style="color: green;">@mesaj</p>
+}
+
+<table border="1" cellpadding="5" cellspacing="0">
+    <tr>
+        <th>ID</th>
+        <th>Ad</th>
+        <th>İşlemler</th>
+    </tr>
+
+    @foreach (var ogrenci in ogrenciler)
+    {
+        <tr>
+            <td>@ogrenci.Id</td>
+            <td>@ogrenci.Ad</td>
+            <td>
+                <a href="/ogrenci/detay/@ogrenci.Id">Detay</a> |
+                <a href="/ogrenci/sil/@ogrenci.Id">Sil</a>
+            </td>
+        </tr>
+    }
+</table>
+
+<a href="/ogrenci/yeni">Yeni Öğrenci Ekle</a>

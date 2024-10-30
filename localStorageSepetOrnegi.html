@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sepet Uygulaması</title>
+</head>
+<body>
+
+    <div>
+        <h1>Sepet Uygulaması</h1>
+        <input type="text" id="urunAdi" placeholder="Ürün Adı"> <!-- Ürün adı için metin alanı -->
+        <input type="number" id="urunFiyati" placeholder="Ürün Fiyatı"> <!-- Ürün fiyatı için sayı alanı -->
+        <button id="ekleButonu">Sepete Ekle</button> <!-- Ürün ekleme butonu -->
+        <button id="temizleButonu">Sepeti Temizle</button> <!-- Sepeti temizleme butonu -->
+
+        <h2>Sepetiniz</h2>
+        <ul id="sepetOgeleri"></ul> <!-- Sepetteki ürünlerin listeleneceği alan -->
+        <h3 id="toplamFiyat">Toplam: 0 ₺</h3> <!-- Toplam fiyatın gösterileceği alan -->
+    </div>
+
+    <script>
+        // Ürünü sepete ekleme fonksiyonu
+        function urunEkle() {
+            const urunAdi = document.getElementById('urunAdi').value; // Ürün adını al
+            const urunFiyati = parseFloat(document.getElementById('urunFiyati').value); // Ürün fiyatını al
+
+            // Eğer geçerli bir ürün adı ve fiyat girilmişse işlemleri yap
+            if (urunAdi && !isNaN(urunFiyati)) {
+                const sepet = JSON.parse(localStorage.getItem('sepet')) || []; // Mevcut sepeti al
+                sepet.push({ ad: urunAdi, fiyat: urunFiyati }); // Ürünü sepete ekle
+                localStorage.setItem('sepet', JSON.stringify(sepet)); // Sepeti kaydet
+
+                // Sepeti güncelle ve ekrana yansıt
+                sepetiGuncelle();
+
+                // Ürün adı ve fiyat alanlarını temizle
+                document.getElementById('urunAdi').value = '';
+                document.getElementById('urunFiyati').value = '';
+            } else {
+                alert('Lütfen geçerli bir ürün adı ve fiyat girin.'); // Hatalı giriş için uyarı
+            }
+        }
+
+        // Sepeti ekrana yansıtma ve toplam fiyatı güncelleme fonksiyonu
+        function sepetiGuncelle() {
+            const sepetOgeleri = JSON.parse(localStorage.getItem('sepet')) || []; // Mevcut sepeti al
+            const sepetListesi = document.getElementById('sepetOgeleri'); // Sepet listesini seç
+            sepetListesi.innerHTML = ''; // Listeyi temizle
+
+            let toplam = 0; // Toplam fiyat başlangıçta 0
+
+            // Sepetteki her bir ürünü listele
+            sepetOgeleri.forEach(oge => {
+                const listeOgesi = document.createElement('li'); // Yeni liste öğesi oluştur
+                listeOgesi.textContent = `${oge.ad} - ${oge.fiyat} ₺`; // Ürün adı ve fiyatını ayarla
+                sepetListesi.appendChild(listeOgesi); // Liste öğesini ekle
+                toplam += oge.fiyat; // Ürün fiyatını toplam fiyata ekle
+            });
+
+            // Güncellenmiş toplam fiyatı ekranda göster
+            document.getElementById('toplamFiyat').textContent = `Toplam: ${toplam} ₺`;
+        }
+
+        // Ürün ekleme butonuna tıklama olayını dinleyici ekle
+        document.getElementById('ekleButonu').addEventListener('click', urunEkle);
+
+        // Sepeti temizleme butonuna tıklama olayını dinleyici ekle
+        document.getElementById('temizleButonu').addEventListener('click', function() {
+            localStorage.removeItem('sepet'); // Sepeti localStorage'dan sil
+            sepetiGuncelle(); // Sepeti güncelle
+        });
+
+        // Sayfa yüklendiğinde mevcut sepeti ekrana yansıt
+        sepetiGuncelle();
+    </script>
+</body>
+</html>

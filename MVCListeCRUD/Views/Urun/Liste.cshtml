@@ -1,0 +1,12 @@
+﻿@model List<Urun>
+
+<h1>Ürün Listesi</h1>
+<ul>
+    @foreach (var urun in Model)
+    {
+        <li>@urun.Ad - @urun.Fiyat TL</li>
+    }
+</ul>
+
+<a href="/Urun/Ekle">Yeni Ürün Ekle</a>
+<a href="/Urun/Tablo">Ürünleri Tablo Olarak Göster</a>

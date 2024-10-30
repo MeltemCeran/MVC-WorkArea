@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hayvanlarım</title>
+    <style>
+        #hayvanDiv {
+            margin-top: 10px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            max-width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hayvanlarım</h1>
+    <button id="gosterBtn">Hayvanları Göster</button>
+    <div id="hayvanDiv"></div>
+
+    <script>
+        const hayvanlar = ["Kedi", "Köpek", "Tavşan", "Horoz", "Balık"];
+        const hayvanDiv = document.getElementById("hayvanDiv");
+
+        document.getElementById("gosterBtn").onclick = () => {
+            hayvanDiv.innerHTML = "";
+            for (let hayvan of hayvanlar) {
+                hayvanDiv.innerHTML += `<p>${hayvan}</p>`;
+            }
+        };
+    </script>
+</body>
+</html>

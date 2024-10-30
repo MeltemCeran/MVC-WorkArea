@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="username" placeholder="Kullanci Adi giriniz">
+    <button id="saveButton">Kaydet </button>
+    <button id="clearButton">Temizle</button>
+    <p id="greeting"></p>
+
+    <script>
+window.onload = function(){
+
+    const storedName = localStorage.getItem('username');
+    if(storedName)
+    {
+        document.getElementById('greeting').innerText=`Hoşgeldin : ${storedName}`
+
+    }
+}
+document.getElementById('saveButton').addEventListener('click',function(){
+    const username = document.getElementById('username').value;
+    if(username)
+{
+    localStorage.setItem('username',username);
+    document.getElementById('greeting').innerText=`Hoşgeldin ${username}`;
+}
+
+});
+document.getElementById('clearButton').addEventListener('click',function(){
+    localStorage.removeItem('username');
+    document.getElementById('greeting').innerHTML='';
+    document.getElementById('username').innerHTML='';
+})
+
+
+
+
+
+    </script>
+</body>
+</html>

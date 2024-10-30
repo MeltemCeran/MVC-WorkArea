@@ -1,0 +1,147 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35027.167
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CustomTagHelper", "CustomTagHelper\CustomTagHelper.csproj", "{88A26E94-DD03-4E4E-BEA3-E5779A8C93A2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MVCRouteAttribute", "MVCRouteAttribute\MVCRouteAttribute.csproj", "{42EBB5CC-4CD9-41D1-8D40-E2B6D9615E6C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MVCQueryString", "MVCQueryString\MVCQueryString.csproj", "{A8D30D29-0FD0-4365-A026-F8062BD9490C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MVCListeCRUD", "MVCListeCRUD\MVCListeCRUD.csproj", "{287FAC8A-0059-41F3-814E-89FE9960BC1D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MVCViewDataViewBagTempData", "MVCViewDataViewBagTempData\MVCViewDataViewBagTempData.csproj", "{F5B78FDA-AA24-4CF7-B9A6-0A0F70D312B9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FRONTEND", "FRONTEND", "{A68E4717-FDFA-4FDA-AE29-FAD8D64FED59}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "JavaScriptDOM", "JavaScriptDOM", "{E8E00875-E6D6-4143-A5AE-26FF245A454F}"
+	ProjectSection(SolutionItems) = preProject
+		Ornek-1.html = Ornek-1.html
+		Ornek-10.html = Ornek-10.html
+		Ornek-2.html = Ornek-2.html
+		Ornek-3.html = Ornek-3.html
+		Ornek-4.html = Ornek-4.html
+		Ornek-5.html = Ornek-5.html
+		Ornek-6.html = Ornek-6.html
+		Ornek-7.html = Ornek-7.html
+		Ornek-8.html = Ornek-8.html
+		Ornek-9.html = Ornek-9.html
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "JsondanVeriCekme", "JsondanVeriCekme", "{DFF48774-C809-4751-8ACF-A9F12D392D20}"
+	ProjectSection(SolutionItems) = preProject
+		data.json = data.json
+		index.html = index.html
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LocalStroge", "LocalStroge", "{8C839742-A093-4990-9F7A-BE29D4B6DF57}"
+	ProjectSection(SolutionItems) = preProject
+		localStorage.html = localStorage.html
+		localStorageSepetOrnegi.html = localStorageSepetOrnegi.html
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SessionStoge", "SessionStoge", "{E411FCDD-AEF4-4F95-B48F-51BD3608D97F}"
+	ProjectSection(SolutionItems) = preProject
+		Session.html = Session.html
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Template", "Template", "{4FD16702-1AAC-4F67-9831-A9FBDC1F6F9E}"
+	ProjectSection(SolutionItems) = preProject
+		Template.html = Template.html
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Images", "Images", "{239BA5DD-4E2E-4132-8E28-6448A329590F}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\Desktop\Çözülen Örnekler\Template\Images\1.png = ..\..\..\Desktop\Çözülen Örnekler\Template\Images\1.png
+		..\..\..\Desktop\Çözülen Örnekler\Template\Images\2.png = ..\..\..\Desktop\Çözülen Örnekler\Template\Images\2.png
+		..\..\..\Desktop\Çözülen Örnekler\Template\Images\3.png = ..\..\..\Desktop\Çözülen Örnekler\Template\Images\3.png
+		..\..\..\Desktop\Çözülen Örnekler\Template\Images\bardak.jpg = ..\..\..\Desktop\Çözülen Örnekler\Template\Images\bardak.jpg
+		..\..\..\Desktop\Çözülen Örnekler\Template\Images\welcome.png = ..\..\..\Desktop\Çözülen Örnekler\Template\Images\welcome.png
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01-HTML", "01-HTML", "{9D481801-6938-4ACD-9AB9-869A9D1EAAE7}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\Desktop\01-Fronted\01-HTML\01-BlockAndInlineTags.html = ..\..\..\Desktop\01-Fronted\01-HTML\01-BlockAndInlineTags.html
+		..\..\..\Desktop\01-Fronted\01-HTML\02-Anchor.html = ..\..\..\Desktop\01-Fronted\01-HTML\02-Anchor.html
+		..\..\..\Desktop\01-Fronted\01-HTML\03-List.html = ..\..\..\Desktop\01-Fronted\01-HTML\03-List.html
+		..\..\..\Desktop\01-Fronted\01-HTML\04-Images.html = ..\..\..\Desktop\01-Fronted\01-HTML\04-Images.html
+		..\..\..\Desktop\01-Fronted\01-HTML\05-Video.html = ..\..\..\Desktop\01-Fronted\01-HTML\05-Video.html
+		..\..\..\Desktop\01-Fronted\01-HTML\06-Table.html = ..\..\..\Desktop\01-Fronted\01-HTML\06-Table.html
+		..\..\..\Desktop\01-Fronted\01-HTML\07-form.html = ..\..\..\Desktop\01-Fronted\01-HTML\07-form.html
+		..\..\..\Desktop\01-Fronted\01-HTML\08-Semantic.html = ..\..\..\Desktop\01-Fronted\01-HTML\08-Semantic.html
+		..\..\..\Desktop\01-Fronted\01-HTML\Level101.html = ..\..\..\Desktop\01-Fronted\01-HTML\Level101.html
+		..\..\..\Desktop\01-Fronted\01-HTML\Level301.html = ..\..\..\Desktop\01-Fronted\01-HTML\Level301.html
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02.CSS", "02.CSS", "{45E25DB4-9595-41BC-9762-7404AADF090D}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\Desktop\01-Fronted\02-CSS\01-inl-inte-exte.html = ..\..\..\Desktop\01-Fronted\02-CSS\01-inl-inte-exte.html
+		..\..\..\Desktop\01-Fronted\02-CSS\02-attribute.html = ..\..\..\Desktop\01-Fronted\02-CSS\02-attribute.html
+		..\..\..\Desktop\01-Fronted\02-CSS\03-backgrounColor.html = ..\..\..\Desktop\01-Fronted\02-CSS\03-backgrounColor.html
+		..\..\..\Desktop\01-Fronted\02-CSS\04-fontsize.html = ..\..\..\Desktop\01-Fronted\02-CSS\04-fontsize.html
+		..\..\..\Desktop\01-Fronted\02-CSS\05.border.html = ..\..\..\Desktop\01-Fronted\02-CSS\05.border.html
+		..\..\..\Desktop\01-Fronted\02-CSS\06-margin.html = ..\..\..\Desktop\01-Fronted\02-CSS\06-margin.html
+		..\..\..\Desktop\01-Fronted\02-CSS\07-padding.html = ..\..\..\Desktop\01-Fronted\02-CSS\07-padding.html
+		..\..\..\Desktop\01-Fronted\02-CSS\08-textAndPsoude.html = ..\..\..\Desktop\01-Fronted\02-CSS\08-textAndPsoude.html
+		..\..\..\Desktop\01-Fronted\02-CSS\09-backgroundImg.html = ..\..\..\Desktop\01-Fronted\02-CSS\09-backgroundImg.html
+		..\..\..\Desktop\01-Fronted\02-CSS\10-display.html = ..\..\..\Desktop\01-Fronted\02-CSS\10-display.html
+		..\..\..\Desktop\01-Fronted\02-CSS\11-positions.html = ..\..\..\Desktop\01-Fronted\02-CSS\11-positions.html
+		..\..\..\Desktop\01-Fronted\02-CSS\12-transation.html = ..\..\..\Desktop\01-Fronted\02-CSS\12-transation.html
+		..\..\..\Desktop\01-Fronted\02-CSS\13-animation.html = ..\..\..\Desktop\01-Fronted\02-CSS\13-animation.html
+		..\..\..\Desktop\01-Fronted\02-CSS\14-responsive.html = ..\..\..\Desktop\01-Fronted\02-CSS\14-responsive.html
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "img", "img", "{46409C5C-CA31-417C-8A8D-F6CE2D74CAF8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVC-Crud", "MVC-Crud\MVC-Crud.csproj", "{DDEB11DB-944F-4057-9114-01DFEBC37ACA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{88A26E94-DD03-4E4E-BEA3-E5779A8C93A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88A26E94-DD03-4E4E-BEA3-E5779A8C93A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88A26E94-DD03-4E4E-BEA3-E5779A8C93A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88A26E94-DD03-4E4E-BEA3-E5779A8C93A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42EBB5CC-4CD9-41D1-8D40-E2B6D9615E6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42EBB5CC-4CD9-41D1-8D40-E2B6D9615E6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42EBB5CC-4CD9-41D1-8D40-E2B6D9615E6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42EBB5CC-4CD9-41D1-8D40-E2B6D9615E6C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8D30D29-0FD0-4365-A026-F8062BD9490C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8D30D29-0FD0-4365-A026-F8062BD9490C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8D30D29-0FD0-4365-A026-F8062BD9490C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8D30D29-0FD0-4365-A026-F8062BD9490C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{287FAC8A-0059-41F3-814E-89FE9960BC1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{287FAC8A-0059-41F3-814E-89FE9960BC1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{287FAC8A-0059-41F3-814E-89FE9960BC1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{287FAC8A-0059-41F3-814E-89FE9960BC1D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5B78FDA-AA24-4CF7-B9A6-0A0F70D312B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5B78FDA-AA24-4CF7-B9A6-0A0F70D312B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5B78FDA-AA24-4CF7-B9A6-0A0F70D312B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5B78FDA-AA24-4CF7-B9A6-0A0F70D312B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DDEB11DB-944F-4057-9114-01DFEBC37ACA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDEB11DB-944F-4057-9114-01DFEBC37ACA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDEB11DB-944F-4057-9114-01DFEBC37ACA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDEB11DB-944F-4057-9114-01DFEBC37ACA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E8E00875-E6D6-4143-A5AE-26FF245A454F} = {A68E4717-FDFA-4FDA-AE29-FAD8D64FED59}
+		{DFF48774-C809-4751-8ACF-A9F12D392D20} = {A68E4717-FDFA-4FDA-AE29-FAD8D64FED59}
+		{8C839742-A093-4990-9F7A-BE29D4B6DF57} = {A68E4717-FDFA-4FDA-AE29-FAD8D64FED59}
+		{E411FCDD-AEF4-4F95-B48F-51BD3608D97F} = {A68E4717-FDFA-4FDA-AE29-FAD8D64FED59}
+		{4FD16702-1AAC-4F67-9831-A9FBDC1F6F9E} = {A68E4717-FDFA-4FDA-AE29-FAD8D64FED59}
+		{239BA5DD-4E2E-4132-8E28-6448A329590F} = {4FD16702-1AAC-4F67-9831-A9FBDC1F6F9E}
+		{9D481801-6938-4ACD-9AB9-869A9D1EAAE7} = {A68E4717-FDFA-4FDA-AE29-FAD8D64FED59}
+		{45E25DB4-9595-41BC-9762-7404AADF090D} = {A68E4717-FDFA-4FDA-AE29-FAD8D64FED59}
+		{46409C5C-CA31-417C-8A8D-F6CE2D74CAF8} = {9D481801-6938-4ACD-9AB9-869A9D1EAAE7}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {03F34A58-25FD-478A-8B51-D8B202177CD0}
+	EndGlobalSection
+EndGlobal
